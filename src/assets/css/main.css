@@ -96,6 +96,14 @@
         color: var(--action);
     }
     
+    .nav a {
+        transition: ease-in-out 0.5s;
+    }
+    
+    .nav a:hover {
+        color: var(--action)
+    }
+    
     .idioma .activo {
         text-decoration: underline var(--color-purple);
         text-underline-offset: 9px;
@@ -157,6 +165,10 @@
     
     .btnaction {
         background-color: var(--action);
+    }
+    
+    .btn-close {
+        outline: none;
     }
     /* skills */
     
@@ -244,6 +256,14 @@
         outline: none;
         box-shadow: none;
     }
+    /* ventana emergente */
+    
+    .errores {
+        padding: 0px;
+        margin: 0px;
+        text-align: left;
+        color: #ff0b02;
+    }
     /* animaciones */
     
     .animated {
@@ -328,9 +348,91 @@
         -webkit-animation-timing-function: ease-out;
         animation-timing-function: ease-out;
     }
+    /* Photography book */
+    
+    .navPhoto {
+        font-family: var(--body-font);
+        color: #222222;
+        background: yellow;
+        border: none;
+        margin: 100px 0px 0px 0px;
+        /* box-shadow: none; */
+    }
+    
+    ul li .enlace {
+        padding: 0px;
+        padding-right: 20px;
+    }
+    
+    .navPhoto a {
+        color: #222222;
+    }
+    
+    .navPhoto a:hover {
+        color: var(--action);
+    }
+    
+    .dropdown-item:hover {
+        background: none;
+    }
+    /* Estilos carousel */
+    
+    .modal {
+        height: 100%;
+        background: rgba(0, 0, 0, .5);
+        backdrop-filter: blur(10px);
+        /* overflow: hidden; */
+        width: 100%;
+    }
+    
+    .retrato {
+        width: 62%;
+        margin: 0px auto;
+    }
+    
+    .retrato2 {
+        width: 50%;
+        margin: 0px auto;
+    }
     /* footer */
     
     footer {
         background-color: var(--footer);
         font-family: sans-serif;
     }
+    /* MEDIA QUERIES */
+    /* Start carousel mediaQuerys */
+    
+    @media screen and (max-width:988px) {
+        .retrato {
+            width: 85%;
+            margin: 0px auto;
+        }
+        .retrato2 {
+            width: 65%;
+            margin: 0px auto;
+        }
+    }
+    
+    @media screen and (max-width:569px) {
+        .retrato {
+            width: 75%;
+            margin: 0px auto;
+        }
+        .retrato2 {
+            width: 55%;
+            margin: 0px auto;
+        }
+    }
+    
+    @media screen and (max-width:450px) {
+        .retrato {
+            width: 100%;
+            margin: 0px;
+        }
+        .retrato2 {
+            width: 100%;
+            margin: 0px;
+        }
+    }
+    /* End carousel media query */

@@ -9,7 +9,10 @@ import { SharedModule } from '../shared/shared.module';
 import { HomeComponent } from './home/home.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { PhotographyComponent } from './photography/photography.component';
-
+import {HttpClientModule} from '@angular/common/http';
+import { TravelComponent } from './photography/travel/travel.component';
+import { SportComponent } from './photography/sport/sport.component';
+import { DocumentaryComponent } from './photography/documentary/documentary.component';
 
 
 
@@ -17,7 +20,10 @@ import { PhotographyComponent } from './photography/photography.component';
   declarations: [
     HomeComponent,
     PortfolioComponent,
-    PhotographyComponent,
+    PhotographyComponent, 
+    TravelComponent,
+    SportComponent,
+    DocumentaryComponent,
   ],
   exports: [
     HomeComponent,
@@ -28,6 +34,7 @@ import { PhotographyComponent } from './photography/photography.component';
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
     RouterModule,
     SharedModule,
   ]

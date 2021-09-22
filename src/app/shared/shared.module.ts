@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 
@@ -13,10 +14,12 @@ import { FooterComponent } from './footer/footer.component';
   declarations: [
     FooterComponent,
     HeaderComponent,
+    NavbarComponent,
   ],
   exports: [
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    NavbarComponent
   ],
   imports: [
     CommonModule, // NOS HABILITA USAR COSAS COMO NGIF ETC
